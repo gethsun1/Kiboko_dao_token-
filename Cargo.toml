@@ -1,0 +1,16 @@
+[package]
+name = "kiboko_dao_token"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+solana-program = "1.10.0"
+spl-token = "3.3.0"
+borsh = "0.9.1" # For serialization
+borsh-derive = "0.9.1"
+
+[features]
+default = ["no-entrypoint"]
+
+[lib]
+crate-type = ["cdylib", "lib"]
